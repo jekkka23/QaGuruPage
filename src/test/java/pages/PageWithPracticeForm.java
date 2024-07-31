@@ -78,9 +78,9 @@ public PageWithPracticeForm setHobbies(String value) {
     return this;
 }
 
-public PageWithPracticeForm setUpload() {
-    File file = new File("/Users/evgenymikhailov/Downloads/testsPhoto.png");
-    uploadFileInput.uploadFile(file);
+public PageWithPracticeForm setUpload(String value) {
+    //File file = new File("/Users/evgenymikhailov/Downloads/testsPhoto.png");
+    uploadFileInput.uploadFromClasspath(value);
     return this;
 }
 

@@ -6,8 +6,8 @@ import pages.PageWithPracticeForm;
 public class PracticeFormTests extends TestBase {
 
     PageWithPracticeForm pageWithPracticeForm = new PageWithPracticeForm();
-    @Test
 
+    @Test
 void checkAllFields() {
         pageWithPracticeForm.openPage();
         pageWithPracticeForm.setFirstNameInput("Evgeny");
@@ -18,12 +18,12 @@ void checkAllFields() {
         pageWithPracticeForm.setDateOfBirth("23", "February", "1995");
         pageWithPracticeForm.setSubject("History");
         pageWithPracticeForm.setHobbies("Sports");
-        pageWithPracticeForm.setUpload();
+        pageWithPracticeForm.setUpload("testsPhoto.png");
         pageWithPracticeForm.setCurrentAddress("Russia");
         pageWithPracticeForm.setState("NCR");
         pageWithPracticeForm.setCity("Delhi");
         pageWithPracticeForm.setSubmit();
-
-
     }
+
+
 }
