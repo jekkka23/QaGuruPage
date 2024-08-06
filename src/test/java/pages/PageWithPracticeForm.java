@@ -11,29 +11,30 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class PageWithPracticeForm {
 
-    public static SelenideElement firstNameInput = $("#firstName");
-    public static SelenideElement lastNameInput = $("#lastName");
-    public static SelenideElement emailInput = $("#userEmail");
-    public static SelenideElement genderInput = $("#genterWrapper");
-    public static SelenideElement userNumberInput = $("#userNumber");
-    public static SelenideElement dateOfBirthInput = $("#dateOfBirthInput");
-    //public static SelenideElement yearDateInput = $(".react-datepicker__year-select"); //убрал в календарь компонент
-    //public static SelenideElement monthDateInput = $(".react-datepicker__month-select"); //убрал в календарь компонент
-    //public static SelenideElement dayDateInput = $(".react-datepicker__day--023"); //убрал в календарь компонент
-    public static SelenideElement subjectInput = $("#subjectsContainer input");
-    public static SelenideElement hobbiesInput = $("#hobbiesWrapper");
-    public static SelenideElement uploadFileInput = $("#uploadPicture");
-    public static SelenideElement currentAddressInput = $("#currentAddress");
-    public static SelenideElement stateInput = $("#state");
-    public static SelenideElement cityInput = $("#city");
-    public static SelenideElement selectCityAndStateInput = $("#stateCity-wrapper");
-    public static SelenideElement submitInput = $("#submit");
-    public static SelenideElement assertModalDialogInput = $(".modal-dialog");
-    public static SelenideElement assertExampleModalSizeInput = $("#example-modal-sizes-title-lg");
-    public static SelenideElement assertTableCheckInput = $(".table-responsive");
+    private final SelenideElement firstNameInput = $("#firstName");
+    private final SelenideElement lastNameInput = $("#lastName");
+    private final SelenideElement emailInput = $("#userEmail");
+    private final SelenideElement genderInput = $("#genterWrapper");
+    private final SelenideElement userNumberInput = $("#userNumber");
+    private final SelenideElement dateOfBirthInput = $("#dateOfBirthInput");
+    //private final SelenideElement yearDateInput = $(".react-datepicker__year-select"); //убрал в календарь компонент
+    //private final SelenideElement monthDateInput = $(".react-datepicker__month-select"); //убрал в календарь компонент
+    //private final SelenideElement dayDateInput = $(".react-datepicker__day--023"); //убрал в календарь компонент
+    private final SelenideElement subjectInput = $("#subjectsContainer input");
+    private final SelenideElement hobbiesInput = $("#hobbiesWrapper");
+    private final SelenideElement uploadFileInput = $("#uploadPicture");
+    private final SelenideElement currentAddressInput = $("#currentAddress");
+    private final SelenideElement stateInput = $("#state");
+    private final SelenideElement cityInput = $("#city");
+    private final SelenideElement selectCityAndStateInput = $("#stateCity-wrapper");
+    private final SelenideElement submitInput = $("#submit");
+    private final SelenideElement assertModalDialogInput = $(".modal-dialog");
+    private final SelenideElement assertExampleModalSizeInput = $("#example-modal-sizes-title-lg");
+    private final SelenideElement assertTableCheckInput = $(".table-responsive");
 
 public void openPage() {
     open("/automation-practice-form");
+    removeBannersAndFooter();
     }
 
 public PageWithPracticeForm setFirstNameInput(String value) {
@@ -100,6 +101,7 @@ public PageWithPracticeForm setCity(String value) {
     }
 
 public PageWithPracticeForm setSubmit() {
+    removeBannersAndFooter();
     Selenide.executeJavaScript("arguments[0].click();", submitInput); //Если прокрутка не помогает, можно использовать JavaScript для выполнения клика. Это обойдет любые проблемы с перекрытием.
     //submitInput.click();
     return this;
@@ -121,6 +123,10 @@ public PageWithPracticeForm setTableHeaderCheck(String value) { //проверк
         //resultTable.$(byText(key)): находит элемент в таблице, содержащий текст key
         //.parent(): поднимается на уровень родительского элемента, который содержит как ключ, так и значение
         //.shouldHave(text(value)): проверяет, что родительский элемент содержит текст value
+    }
+    private void removeBannersAndFooter() { //МЕТОД, КОТОРЫЙ УБИРАЕТ ВСЕ БАННЕРЫ, НУЖНО СВЫВОДИТЬ В ОТДЕЛЬНЫЙ КЛАСС И ДОБАЛЯТЬ В OPEN
+        Selenide.executeJavaScript("$('#fixedban').remove()");
+        Selenide.executeJavaScript("$('footer').remove()");
     }
 
 
