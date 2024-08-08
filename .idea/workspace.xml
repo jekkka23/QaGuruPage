@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99769dd-31a5-40b9-91c5-53481f5336cd" name="Changes" comment="add corrections">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/TestData.java" afterDir="false" />
+    <list default="true" id="d99769dd-31a5-40b9-91c5-53481f5336cd" name="Changes" comment="add TestData">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/simple/NegativeTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/simple/PositiveTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -64,7 +68,7 @@
     "Gradle.PracticeFormTests.testFormSubmissionWithoutFirstName.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "simple",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/evgenymikhailov/IdeaProjects/qa-guru/QaGuruPageObjectHW2/src/test/resources",
     "node.js.detected.package.eslint": "true",
@@ -212,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PracticeFormTests" />
+        <item itemvalue="Gradle.PracticeFormTests.testFormSubmissionWithoutFirstName" />
+        <item itemvalue="Gradle.PracticeFormTests.testFormSubmissionWithMinimalData" />
         <item itemvalue="Gradle.PracticeFormTests.FormSubmissionWithoutFileUploadTest" />
         <item itemvalue="Gradle.PracticeFormTests.checkFillingAllFieldsTest" />
-        <item itemvalue="Gradle.PracticeFormTests.testFormSubmissionWithMinimalData" />
-        <item itemvalue="Gradle.PracticeFormTests.testFormSubmissionWithoutFirstName" />
+        <item itemvalue="Gradle.PracticeFormTests" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +242,7 @@
       <updated>1722410604133</updated>
       <workItem from="1722410605575" duration="28778000" />
       <workItem from="1722914538596" duration="3295000" />
-      <workItem from="1723110649290" duration="454000" />
+      <workItem from="1723110649290" duration="2098000" />
     </task>
     <task id="LOCAL-00001" summary="add upload from resources">
       <option name="closed" value="true" />
@@ -264,7 +268,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722923726307</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add TestData">
+      <option name="closed" value="true" />
+      <created>1723111231286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723111231286</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add TestData">
+      <option name="closed" value="true" />
+      <created>1723111257464</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723111257464</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +294,8 @@
     <MESSAGE value="add upload from resources" />
     <MESSAGE value="add check success/error" />
     <MESSAGE value="add corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="add corrections" />
+    <MESSAGE value="add TestData" />
+    <option name="LAST_COMMIT_MESSAGE" value="add TestData" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
