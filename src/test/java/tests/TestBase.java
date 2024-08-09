@@ -8,6 +8,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.util.Map;
 
 public class TestBase {
 
@@ -22,6 +25,11 @@ public class TestBase {
         Configuration.holdBrowserOpen = false; //делает браузер закрытым после теста (true оставляет открытым)
         //Configuration.timeout = 5000; по дефолту таймаут 4000
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub"; //для удаленного запуска
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        )); //Настройки для Selenoid (включение VNC и записи видео).
     }
     @BeforeEach //метод выполняется перед каждым тестом
     void setUpBeforeEach() {
