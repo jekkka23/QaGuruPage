@@ -43,7 +43,7 @@ class PracticeFormTests extends TestBase {
     }
 
     @Test
-    public void FormSubmissionWithoutFileUploadTest() { //Успешное заполнение формы без загрузки файла
+    public void formSubmissionWithoutFileUploadTest() { //Успешное заполнение формы без загрузки файла
         pageWithPracticeForm.openPage();
 
         pageWithPracticeForm.setFirstNameInput("Anna")
@@ -72,7 +72,7 @@ class PracticeFormTests extends TestBase {
     }
 
     @Test
-    public void FormSubmissionWithMinimalDataTest() { //Успешное заполнение формы с минимальными данными
+    public void formSubmissionWithMinimalDataTest() { //Успешное заполнение формы с минимальными данными
         pageWithPracticeForm.openPage();
 
         pageWithPracticeForm.setFirstNameInput("John")
@@ -90,7 +90,7 @@ class PracticeFormTests extends TestBase {
     }
 
     @Test
-    public void FormSubmissionWithoutFirstNameTest() { //Ошибка при отсутствии обязательного поля "Имя"
+    public void formSubmissionWithoutFirstNameTest() { //Ошибка при отсутствии обязательного поля "Имя"
         pageWithPracticeForm.openPage();
 
         pageWithPracticeForm.setLastNameInput("Doe")
@@ -107,7 +107,7 @@ class PracticeFormTests extends TestBase {
     }
 
     @Test
-    public void FormSubmissionWithInvalidEmailTest() { //Ошибка при некорректном формате email
+    public void formSubmissionWithInvalidEmailTest() { //Ошибка при некорректном формате email
         pageWithPracticeForm.openPage();
 
         pageWithPracticeForm.setFirstNameInput("John")
