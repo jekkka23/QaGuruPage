@@ -30,7 +30,7 @@ public class TestBase {
                 "enableVNC", true,
                 "enableVideo", true
         )); //Настройки для Selenoid (включение VNC и записи видео).
-        Configuration.browserCapabilities = capabilities;
+        Configuration.browserCapabilities = capabilities; //Присвоение настроек конфигурации браузера
     }
     @BeforeEach //метод выполняется перед каждым тестом
     void setUpBeforeEach() {
