@@ -4,3 +4,4 @@ https://api.telegram.org/bot7226163304:AAFCsFHt8o_tVF0sS8xlGj_AwMxypTFxt6k/getUp
 
 290656468
 
+java "-DconfigFile=notifications/config.json" -jar./notifications/allure-notifications-4.6.1.jar
