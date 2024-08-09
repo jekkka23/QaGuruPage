@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d99769dd-31a5-40b9-91c5-53481f5336cd" name="Changes" comment="add TestData">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/simple/NegativeTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/simple/PositiveTests.java" afterDir="false" />
+    <list default="true" id="d99769dd-31a5-40b9-91c5-53481f5336cd" name="Changes" comment="add video to allure">
+      <change afterPath="$PROJECT_DIR$/notifications/draft.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,34 +56,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Gradle.PracticeFormTests.FormSubmissionWithoutFileUploadTest.executor": "Run",
-    "Gradle.PracticeFormTests.checkAllFields.executor": "Run",
-    "Gradle.PracticeFormTests.checkFillingAllFieldsTest.executor": "Run",
-    "Gradle.PracticeFormTests.executor": "Run",
-    "Gradle.PracticeFormTests.testFormSubmissionWithMinimalData.executor": "Run",
-    "Gradle.PracticeFormTests.testFormSubmissionWithoutFileUpload.executor": "Run",
-    "Gradle.PracticeFormTests.testFormSubmissionWithoutFirstName.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "simple",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/evgenymikhailov/IdeaProjects/qa-guru/QaGuruPageObjectHW2/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/evgenymikhailov/IdeaProjects/qa-guru/QaGuruPageObjectHW2/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.PracticeFormTests.FormSubmissionWithoutFileUploadTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTests.checkAllFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTests.checkFillingAllFieldsTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTests.testFormSubmissionWithMinimalData.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTests.testFormSubmissionWithoutFileUpload.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PracticeFormTests.testFormSubmissionWithoutFirstName.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;simple&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/evgenymikhailov/IdeaProjects/qa-guru/QaGuruPageObjectHW2/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/evgenymikhailov/IdeaProjects/qa-guru/QaGuruPageObjectHW2/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
@@ -216,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PracticeFormTests" />
+        <item itemvalue="Gradle.PracticeFormTests.checkFillingAllFieldsTest" />
         <item itemvalue="Gradle.PracticeFormTests.testFormSubmissionWithoutFirstName" />
         <item itemvalue="Gradle.PracticeFormTests.testFormSubmissionWithMinimalData" />
         <item itemvalue="Gradle.PracticeFormTests.FormSubmissionWithoutFileUploadTest" />
-        <item itemvalue="Gradle.PracticeFormTests.checkFillingAllFieldsTest" />
-        <item itemvalue="Gradle.PracticeFormTests" />
       </list>
     </recent_temporary>
   </component>
@@ -243,6 +243,7 @@
       <workItem from="1722410605575" duration="28778000" />
       <workItem from="1722914538596" duration="3295000" />
       <workItem from="1723110649290" duration="2098000" />
+      <workItem from="1723185801525" duration="5281000" />
     </task>
     <task id="LOCAL-00001" summary="add upload from resources">
       <option name="closed" value="true" />
@@ -284,18 +285,120 @@
       <option name="project" value="LOCAL" />
       <updated>1723111257464</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add branch simple">
+      <option name="closed" value="true" />
+      <created>1723114013387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723114013387</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add remote regression tests">
+      <option name="closed" value="true" />
+      <created>1723175239576</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723175239576</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add scroll">
+      <option name="closed" value="true" />
+      <created>1723179998162</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723179998162</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add AllureSelenide">
+      <option name="closed" value="true" />
+      <created>1723180603525</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723180603525</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add @Step">
+      <option name="closed" value="true" />
+      <created>1723182278875</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723182278875</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add Attach">
+      <option name="closed" value="true" />
+      <created>1723183561737</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723183561737</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add video to allure">
+      <option name="closed" value="true" />
+      <created>1723185319407</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723185319407</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add video to allure">
+      <option name="closed" value="true" />
+      <created>1723185357798</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723185357798</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add video to allure">
+      <option name="closed" value="true" />
+      <created>1723185432973</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1723185432973</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/simple" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add upload from resources" />
     <MESSAGE value="add check success/error" />
     <MESSAGE value="add corrections" />
     <MESSAGE value="add TestData" />
-    <option name="LAST_COMMIT_MESSAGE" value="add TestData" />
+    <MESSAGE value="add branch simple" />
+    <MESSAGE value="add remote regression tests" />
+    <MESSAGE value="add scroll" />
+    <MESSAGE value="add AllureSelenide" />
+    <MESSAGE value="add @Step" />
+    <MESSAGE value="add Attach" />
+    <MESSAGE value="add video to allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="add video to allure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
