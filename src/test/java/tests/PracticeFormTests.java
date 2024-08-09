@@ -14,6 +14,7 @@ class PracticeFormTests extends TestBase {
     public void checkFillingAllFieldsTest() { //Успешное заполнение всех полей формы
         pageWithPracticeForm.openPage();
 
+
         pageWithPracticeForm.setFirstNameInput("Evgeny")
                             .setLastNameInput("Mihailov")
                             .setEmailInput("jekkka23@mail.ru")

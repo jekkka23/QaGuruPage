@@ -33,7 +33,7 @@ public class PageWithPracticeForm {
     private final SelenideElement assertTableCheckInput = $(".table-responsive");
 
 public void openPage() {
-    open("/automation-practice-form");
+    open("/automation-practice-form"); //всегда выше чем перекрытие баннера
     removeBannersAndFooter();
     }
 
@@ -89,12 +89,15 @@ public PageWithPracticeForm setCurrentAddress(String value) {
     }
 
 public PageWithPracticeForm setState(String value) {
+    removeBannersAndFooter();
+    Selenide.executeJavaScript("window.scrollBy(0,500);"); //делаем прокрутку ОБЯЗАТЕЛЬНО
     stateInput.click();
     selectCityAndStateInput.$(byText(value)).click(); //добавить $(byText(value))
     return this;
     }
 
 public PageWithPracticeForm setCity(String value) {
+    removeBannersAndFooter();
      cityInput.click();
      selectCityAndStateInput.$(byText(value)).click(); //добавить $(byText(value))
      return this;
