@@ -63,3 +63,8 @@ task simple_test(type: Test) {     //потом удалить эту таску
         includeTags("simple")
     }
 }
+task regression_test(type: Test) {     //потом удалить эту таску
+    useJUnitPlatform {
+        includeTags("regression")
+    }
+}

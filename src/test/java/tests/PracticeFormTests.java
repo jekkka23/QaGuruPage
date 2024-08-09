@@ -1,13 +1,16 @@
 package tests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.PageWithPracticeForm;
 
+@Tag("regression")
 class PracticeFormTests extends TestBase {
 
     PageWithPracticeForm pageWithPracticeForm = new PageWithPracticeForm();
 
     @Test
+
     public void checkFillingAllFieldsTest() { //Успешное заполнение всех полей формы
         pageWithPracticeForm.openPage();
 
