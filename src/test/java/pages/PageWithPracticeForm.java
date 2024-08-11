@@ -35,7 +35,7 @@ public class PageWithPracticeForm {
 
     @Step("Открыть страницу с формой")
     public void openPage() {
-        open("/automation-practice-form"); //всегда выше чем перекрытие баннера
+        open("/automation-practice-form"); //open всегда выше чем перекрытие баннера
         removeBannersAndFooter();
     }
 
